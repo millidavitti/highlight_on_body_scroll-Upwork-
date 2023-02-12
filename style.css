@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: "Roboto Mono";
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+section {
+	height: 100vh;
+	width: 100%;
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+#home,
+#link5,
+#link9 {
+	background-color: royalblue;
+}
+#about,
+#link6,
+#link10 {
+	background-color: aquamarine;
+}
+#contact,
+#link7 {
+	background-color: #c5c5c5;
+}
+#footer,
+#link8 {
+	background-color: crimson;
+}
+nav {
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
+.container {
+	outline: auto;
+	overflow-x: scroll;
+	padding: 10px;
+	background-color: cadetblue;
+	transition: all 400ms ease-in-out;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+.container ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	position: relative;
+	width: 100%;
+	/* background: #000; */
+}
+.container ul li {
+	/* min-width: 100px; */
+	flex-shrink: 0;
+	padding: 5px;
+	outline: auto;
+}
+.container ul li a {
+	text-decoration: none;
+	color: black;
+}
+nav .container ul li.active {
+	background-color: crimson;
+	transition: 0.3s ease background-color;
+}
+nav .container ul li.active a {
+	color: rgb(255, 255, 255);
+}
