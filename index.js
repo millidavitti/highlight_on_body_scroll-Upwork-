@@ -16,7 +16,7 @@ function sectionCb(entries) {
 	//Scroll Into View.
 	const el = document.querySelector(".active");
 	const elem = el.getBoundingClientRect();
-	const scroll = { len: el.getBoundingClientRect().width };
+	const scroll = { len: elem.width };
 	const index = +el.dataset.index;
 
 	for (let i = 0; i < index; i++) {
