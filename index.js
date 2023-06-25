@@ -33,7 +33,7 @@ function sectionCb(entries) {
 		else if (!isElemVisible(el, linkRack).isVisible) {
 			// From the right
 			if (
-				el.getBoundingClientRect().right >
+			elem.right >
 				linkRack.getBoundingClientRect().width
 			)
 				linkRack.scrollTo({
@@ -44,7 +44,7 @@ function sectionCb(entries) {
 					behavior: "smooth",
 				});
 			// From the left
-			else if (el.getBoundingClientRect().left < 0)
+			else if (elem.left < 0)
 				linkRack.scrollTo({
 					left: scroll.len - elem.width + 20 * index,
 					behavior: "smooth",
