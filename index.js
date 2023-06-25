@@ -46,7 +46,7 @@ function sectionCb(entries) {
 			// From the left
 			else if (elem.left < 0)
 				linkRack.scrollTo({
-					left: scroll.len - elem.width + 20 * index,
+					left: 20 * index,
 					behavior: "smooth",
 				});
 		}
